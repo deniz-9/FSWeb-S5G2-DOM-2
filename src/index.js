@@ -38,6 +38,14 @@ rota.forEach((h4) => {
     });
 });
 
+//mouseout
+const rota2 = document.querySelectorAll("h4");
+rota2.forEach((h4) => {
+    h4.addEventListener("mouseout", () => {
+        h4.style.color = "black";
+    });
+});
+
 
 // focus 
 
@@ -81,7 +89,7 @@ document.addEventListener("scroll", (event) => {
 // load 
 
 const loading = document.querySelectorAll("img");
-loading[1].addEventListener("load", (event) => {
+loading[1].addEventListener("load", () => {
     alert("Yüklendi.");
 });
 
